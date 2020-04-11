@@ -3,17 +3,22 @@
   <h4>Seu componente está sendo exibido em tela</h4>
   <hr>
   <h5>Como aparece o seu evento abaixo?</h5>
-  
-  <div style="margin-top:30px">
-    Evento: {{evento.name}}
-  </div>
-  <div>
-    Data:{{evento.date}}
-  </div>
-  <div>
-    Hora:{{evento.time}}
-  </div>
-  <div>
-    Endereço:{{evento.location.address}}, {{evento.location.city}}, {{evento.location.country}}
+  <div *ngFor= "let events of evento">
+    <div style="margin-top:30px">
+      Evento: {{events?.name}}
     </div>
+    <div>
+      Data:{{events?.date}}
+    </div>
+    <div>
+      Hora:{{events?.time}}
+    </div>
+    <div>
+      Endereço:{{events.location?.address}}, {{events.location?.city}}, {{events.location?.country}}
+    </div>
+    <div>
+      Link:{{events.onlineUrl}}
+    </div>
+  </div>
+  
 </div>
