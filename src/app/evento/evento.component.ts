@@ -31,7 +31,7 @@ export class EventoComponent implements OnInit {
     date: '6/10/2020', 
     time: '8am', 
     location: {address: 'Expominas', city: 'Belo Horizonte', country: 'Brasil'}, 
-      onlineUrl: 'http://www.sambaprime.com.br'}
+    onlineUrl: 'http://www.sambaprime.com.br'}
 ]
   constructor() { }
 

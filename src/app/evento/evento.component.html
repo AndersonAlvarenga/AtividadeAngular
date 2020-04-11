@@ -13,12 +13,10 @@
     <div>
       Hora:{{events?.time}}
     </div>
-    <div>
+    <div *ngIf="events.location?.address">
       Endereço:{{events.location?.address}}, {{events.location?.city}}, {{events.location?.country}}
     </div>
-    <div>
-      Link:{{events.onlineUrl}}
-    </div>
+    <span *ngIf="events.onlineUrl">Link:{{events.onlineUrl}}</span>
   </div>
   
 </div>
